@@ -1,18 +1,15 @@
-﻿# Web Application Technologies
+﻿# Assignment 3: JavaScript Event Handling
 
 [![University](https://img.shields.io/badge/University-University%20of%20Ioannina-blue.svg)](https://www.uoi.gr)
-[![Department](https://img.shields.io/badge/Department-Informatics%20%26%20Telecommunications-lightgrey.svg)](https://www.cs.uoi.gr/)
-[![Course](https://img.shields.io/badge/Course-Web%20Application%20Tech-orange.svg)]()
-[![Languages](https://img.shields.io/badge/Languages-HTML%20%7C%20JS%20%7C%20Java-blueviolet.svg)]()
+[![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)]()
 
-Semester assignments and lab exercises for the course **"Web Application Technologies"** (Τεχνολογίες Εφαρμογών Διαδικτύου) at the Department of Informatics and Telecommunications, University of Ioannina.
+## Overview
+A hands-on implementation of Event-Driven Programming in the browser. This project contains three distinct solutions showcasing different methodologies for handling user interactions via JavaScript.
 
-## 📂 Repository Index (Branches)
-
-- **[`assignment-1-html-css`](https://github.com/ntontouu/Web-Application-Technologies/tree/assignment-1-html-css)**: HTML structure and CSS styling (Tables, Forms).
-- **[`assignment-2-js-dom`](https://github.com/ntontouu/Web-Application-Technologies/tree/assignment-2-js-dom)**: JavaScript Document Object Model (DOM) manipulation.
-- **[`assignment-3-js-events`](https://github.com/ntontouu/Web-Application-Technologies/tree/assignment-3-js-events)**: JavaScript Event Handling (`onclick`, `onmouseover`).
-- **[`assignment-4-java-threads`](https://github.com/ntontouu/Web-Application-Technologies/tree/assignment-4-java-threads)**: Java Multithreading and Concurrency.
+## Files & Event Models
+- **`question1.html`:** Demonstrates **Inline Event Handlers**. Uses the `onclick` HTML attribute to trigger a globally scoped JS function that modifies DOM content.
+- **`question2.html`:** Demonstrates the **DOM Level 0 Event Model**. The `onclick` property is assigned directly within the script block (`element.onclick = displayDate`), completely decoupling the HTML markup from the JS logic.
+- **`question3.html`:** Demonstrates **Mouse Events**. Utilizes `onmouseover` and `onmouseout` attributes to dynamically alter the CSS color properties of text when the user hovers over it.
 
 ---
 **Author:** Maria Alexandra Ntontou (2799)

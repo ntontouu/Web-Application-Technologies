@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="myBtn">Try it</button>
+<p id="demo"></p>
+<script> 
+// Χειρισμός συμβάντος onclick μέσω DOM
+// Αντιστοίχιση της συνάρτησης displayDate στο click event του κουμπιού
+document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() { 
+    // Εμφάνιση της τρέχουσας ημερομηνίας και ώρας
+    document.getElementById("demo").innerHTML = Date(); 
+} 
+</script> 
+</body>
+</html>
