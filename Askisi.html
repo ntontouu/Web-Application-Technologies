@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Λίστα Μαθητών</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: green;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: cyan;
+        }
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Φόρμα -->
+    <form action="students.html" method="get">
+        <label for="am">ΑΜ:</label>
+        <input type="text" id="am" name="am" required>
+        
+        <label for="surname">Επώνυμο:</label>
+        <input type="text" id="surname" name="surname" required>
+        
+        <label for="semester">Εξάμηνο:</label>
+        <select id="semester" name="semester">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <button type="submit" name="sumbit" value="Submit">Submit</button>
+    </form>
+
+    <!-- Πίνακας με φοιτητές -->
+    <table>
+        <thead>
+            <tr>
+                <th>Αριθμός Μητρώου</th>
+                <th>Όνομα</th>
+                <th>Εξάμηνο</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2799</td>
+                <td>ΜΑΡΙΑ ΑΛΕΞΑΝΔΡΑ ΝΤΟΝΤΟΥ</td>
+                <td>7</td>
+                <td>int02799@uoi.gr</td>
+            </tr>
+            <tr>
+                <td>3607</td>
+                <td>ΕΙΡΗΝΗ ΑΙΚΑΤΕΡΙΝΗ ΝΤΟΝΤΟΥ</td>
+                <td>1</td>
+                <td>int03607@uoi.gr</td>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>ΔΗΜΗΤΡΙΟΣ ΝΤΟΝΤΟΣ</td>
+                <td>2</td>
+                <td>d.ntontos@uoi.gr</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
